@@ -32,30 +32,6 @@
 					<button type="button" class="btn btn-default btn-block bridge-three" onclick="onmenu('.bridge-three', '#bridge-three', 'btn btn-default btn-block bridge-three active');">Info</button>
 				</div>
 				<!--Modal connection in template footer-->
-				<?php  
-					if (empty($_SESSION)) {
-						echo '
-						<div class="col-md-3 col-sm-3 col-xs-6 navButton">
-							<button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target=".bs-example-modal-lg">Connection</button>
-						</div>
-						';
-					}
-					else{
-						echo '<div class="col-md-3 col-sm-3 col-xs-6">';
-							echo '<div class="col-md-9 col-sm-9 col-xs-9" id="user-name">';
-								echo '<a href="dashboard.php" role="button" id="user-content" class="btn btn-default btn-block">'.$_SESSION['username'].'</a>';
-							echo '</div>';
-							echo '<div class="col-md-3 col-sm-3 col-xs-3" id="user-face">';
-								if (!empty($_SESSION['picture'])) {
-									echo '<a href="profile.php"><img src="image/profile_pic/'.$_SESSION['picture'].'" class="img-user" alt="user pic"></a>';
-								}
-								else
-									echo '<a href="profile.php"><img src="image/profile_pic/no-pic-user.jpg" class="img-user" alt="no pic"></a>';
-							echo '</div>';	
-						echo '</div>';
-						
-					}	
-				?>
 			</div>
 		</div>
 	</div>
