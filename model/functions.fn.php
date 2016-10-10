@@ -1,52 +1,18 @@
 <?php
-	function userConnection($db, $email, $password){
-		//Requête SQL
-		$sql = "SELECT * FROM users WHERE `email` = '$email' AND `password` = '$password' LIMIT 1";
-		$req = $db->prepare($sql);
-		$req->execute();
-		$result = $req->fetch(PDO::FETCH_ASSOC);
-		//Si le fetch réussi, alors un résultat a été retourné donc le couple email / password est correct
-		if($result == true){
-			//on définit la SESSION
-			$_SESSION['id'] = $result['id'];
-			$_SESSION['username'] = $result['username'];
-			$_SESSION['email'] = $result['email'];
-			$_SESSION['created_at'] = $result['created_at'];
-			$_SESSION['picture'] = $result['picture'];
+	function uploadDocument($db, $path, $partOf){
+		try{
+			$sql = "INSERT INTO document SET piece_of = :part_of, path_to = :path_to";
+			$req = $db->prepare($sql);
+			$req->execute(array(':part_of' => $partOf, ':path_to' => $path));
+			$result = $req->fetchAll(PDO::FETCH_ASSOC);
 			return true;
-		}else{
-			return false;
+		}
+		catch (PDOException $e){
+			print 'Erreur PDO : '.$e->getMessage().'<br/>';
+			die();
 		}
 	}
 
-	function remenberConnection($db, $key){
-		//Requête SQL
-		$sql = "SELECT * FROM users WHERE `key` = '$key'";
-		$req = $db->prepare($sql);
-		$req->execute();
-		$result = $req->fetch(PDO::FETCH_ASSOC);
-		//var_dump($req);
-		//Si le fetch réussi, alors un résultat a été retourné donc le couple email / password est correct
-		if($result == true){
-			//on définit la SESSION
-			$_SESSION['id'] = $result['id'];
-			$_SESSION['username'] = $result['username'];
-			$_SESSION['email'] = $result['email'];
-			$_SESSION['created_at'] = $result['created_at'];
-			$_SESSION['picture'] = $result['picture'];
-			setcookie("iibridgem",$key,time() + 2678400, null, null, false, true);
-			return true;
-		}else{
-			return false;
-		}
-	}
-
-
-		/*1.3!selectTweets
-			return :
-				list of tweets in array
-			$db -> 				database object
-		*/
 	function selectArticles($db){
 		try{
 			$sql = "SELECT * FROM articles ORDER BY created_at DESC";
@@ -68,39 +34,6 @@
 			$req->execute(); 
 			$result = $req->fetchAll(PDO::FETCH_ASSOC);
 			return $result;
-		}
-		catch (PDOException $e){
-			print 'Erreur PDO : '.$e->getMessage().'<br/>';
-			die();
-		}
-	}
-
-	function selectArticleComments($db, $id){
-		try{
-			$sql = "SELECT * FROM comments WHERE article_id = $id ORDER BY created_at DESC";
-			$req = $db->prepare($sql);
-			$req->execute();
-			$result = $req->fetchAll(PDO::FETCH_ASSOC);
-			//comments array and foreach addition
-			$comments = array();
-			foreach ($result as $fuck) {
-				$id = $fuck['id'];
-				$fuck['childs'] = array();
-				$comments[$id] = $fuck;
-			}
-			foreach ($comments as $k => &$v) {
-			  	if ($v['parent'] != 0) {
-			    	$comments[$v['parent']]['childs'][] =& $v;
-			  	}
-			}
-			unset($v);
-			// delete the childs comments from the top level
-			foreach ($comments as $k => $v) {
-			  	if ($v['parent'] != 0) {
-			    	unset($comments[$k]);
-			  	}
-			}
-			return $comments;
 		}
 		catch (PDOException $e){
 			print 'Erreur PDO : '.$e->getMessage().'<br/>';

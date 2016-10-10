@@ -20,15 +20,30 @@
 		<div class="row">
 			<div class ="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1" id="header">
 				<div class="col-md-3 col-sm-3 col-xs-6 navButton">
-					<button type="button" class="btn btn-default btn-block bridge-one" onclick="onmenu('.bridge-one', '#bridge-one', 'btn btn-default btn-block bridge-one active');">Brigdge</button>
+					<a type="button" class="btn btn-default btn-block" href="upload.php">Upload</a>
 				</div>
 				<div class="col-md-3 col-sm-3 col-xs-6 navButton">
-					<button type="button" class="btn btn-default btn-block bridge-two" onclick="onmenu('.bridge-two', '#bridge-two', 'btn btn-default btn-block bridge-two active');">Content</button>
+					<a type="button" class="btn btn-default btn-block">Content</a>
 				</div>
 				<div class="col-md-3 col-sm-3 col-xs-6 navButton">
-					<button type="button" class="btn btn-default btn-block bridge-three" onclick="onmenu('.bridge-three', '#bridge-three', 'btn btn-default btn-block bridge-three active');">Info</button>
+					<a type="button" class="btn btn-default btn-block">Info</a>
 				</div>
 				<!--Modal connection in template footer-->
 			</div>
 		</div>
 	</div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 col-xs-12 col-md-offset-2">
+                <?php isset($flashType) ? $type = $flashType : $type = 'danger' ?>
+                <?php if(isset($error)): ?>
+                    <div class="alert alert-<?php echo $type ?> alert-dismissible fade in" role="alert">
+                        <button class="close" aria-label="Close" type="button" data-dismiss="alert">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <p><?php echo $error ?></p>
+                    </div>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
