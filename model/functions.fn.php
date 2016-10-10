@@ -1,4 +1,32 @@
 <?php
+	function createDocument($db, $key){
+		try{
+			$sql = "INSERT INTO recettage SET doc_key = :doc_key";
+			$req = $db->prepare($sql);
+			$req->execute(array(':doc_key' => $key));
+			$result = $req->fetchAll(PDO::FETCH_ASSOC);
+			return true;
+		}
+		catch (PDOException $e){
+			print 'Erreur PDO : '.$e->getMessage().'<br/>';
+			die();
+		}
+	}
+
+	function selectDocument($db, $key){
+		try{
+			$sql = "SELECT id FROM recettage WHERE doc_key = '".$key."'";
+			$req = $db->prepare($sql);
+			$req->execute(); 
+			$result = $req->fetchAll(PDO::FETCH_ASSOC);
+			return $result;
+		}
+		catch (PDOException $e){
+			print 'Erreur PDO : '.$e->getMessage().'<br/>';
+			die();
+		}
+	}
+
 	function uploadDocument($db, $path, $partOf){
 		try{
 			$sql = "INSERT INTO document SET piece_of = :part_of, path_to = :path_to";
