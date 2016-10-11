@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body onresize="getSize()">
+<body>
 	<noscript>
 		<div class="container-fluid">
 			<div class="row">

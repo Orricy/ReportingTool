@@ -3,6 +3,9 @@ session_start();
 require('config/config.php');
 require('model/functions.fn.php');
 
+if(!isset($_SESSION['document']))
+    header('Location: index.php');
+
 //Script d'upload de fichier en php
 if(isset($_FILES['avatar'])&&$_FILES['avatar']['error']==0){
     if($_FILES['avatar']['size']<=10000000){
@@ -15,7 +18,7 @@ if(isset($_FILES['avatar'])&&$_FILES['avatar']['error']==0){
         if($upload == true){
             //$selectedTweet = selectTweet($db, $id);
             //$displayTweet = $selectedTweet[0]['message'];
-            header('Location: index.php');
+            header('Location: mydocument.php');
         }
         else{
             $error = 'L\'article n\'a pas été envoyé';
