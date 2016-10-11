@@ -55,6 +55,20 @@
 		}
 	}
 
+	function deleteDocumentById($db, $id){
+		try{
+			$sql = "DELETE FROM document WHERE id = :id";
+			$req = $db->prepare($sql);
+			$req->execute(array(':id' => $id));
+			$result = $req->fetchAll(PDO::FETCH_ASSOC);
+			return true;
+		}
+		catch (PDOException $e){
+			print 'Erreur PDO : '.$e->getMessage().'<br/>';
+			die();
+		}
+	}
+
 	function uploadDocument($db, $name, $path, $partOf){
 		try{
 			$sql = "INSERT INTO document SET name = :name, piece_of = :part_of, path_to = :path_to";

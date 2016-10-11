@@ -4,6 +4,7 @@
         foreach ($documentUploads as $upload) {
             echo '<div class="col-xs-12">';
             echo '<a type="button" class="btn btn-primary" href="files/'.$upload['path_to'].'">'.$upload['name'].'</a>';
+            echo '<a href="deletedocument.php?id='.$upload['id'].'"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>';
             echo '</div>';
         } 
         ?>
