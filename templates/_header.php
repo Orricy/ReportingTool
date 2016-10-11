@@ -30,7 +30,7 @@
 				</div>
                 <?php if(isset($_SESSION['document'])): ?>
                     <div class="col-md-3 col-sm-3 col-xs-6 navButton">
-                        <a type="button" class="btn btn-default btn-block">Numéro de dossier : <?php echo $_SESSION['document']; ?></a>
+                        <a type="button" href="mydocument.php" class="btn btn-default btn-block">Numéro de dossier : <?php echo $_SESSION['document']; ?></a>
                     </div>
                 <?php endif; ?>
 				<!--Modal connection in template footer-->
