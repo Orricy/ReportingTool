@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b01af2df-ff2c-4c48-b5cb-da31a615d525" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/formone.php" afterPath="$PROJECT_DIR$/formone.php" />
     </list>
@@ -48,9 +49,21 @@
       <file leaf-file-name="formone.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/formone.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6175637">
-              <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.29745042">
+              <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.5">
+              <caret line="5" column="28" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="28" />
+              <folding>
+                <marker date="1476201149000" expanded="true" signature="656:1023" placeholder="INSERT INTO informations... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,6 +120,7 @@
         <option value="$PROJECT_DIR$/templates/form2.php" />
         <option value="$PROJECT_DIR$/config/config.php" />
         <option value="$PROJECT_DIR$/templates/formone.php" />
+        <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/formone.php" />
       </list>
     </option>
@@ -424,10 +438,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="28" />
+          <folding>
+            <marker date="1476201149000" expanded="true" signature="656:1023" placeholder="INSERT INTO informations... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/formone.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6175637">
-          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.29745042">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
           <folding />
         </state>
       </provider>
