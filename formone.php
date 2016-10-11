@@ -1,6 +1,6 @@
-<?php include('_header.php'); ?>
+<?php include('templates/_header.php'); ?>
 
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         <form>
             <div class="form-group">
@@ -33,6 +33,6 @@
 </div>
 
 
-<?php include('_footer.php') ; ?>
+<?php include('templates/_footer.php'); ?>
 
 
