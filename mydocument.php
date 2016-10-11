@@ -4,8 +4,9 @@ session_start();
 require 'config/config.php';
 require('model/functions.fn.php');
 
-$allDocuments = selectAllDocument($db);
+$documentUploads = selectUpload($db, $_SESSION['document']);
+//var_dump($documentUploads);
 
 require 'templates/_header.php';
-require 'templates/main.php';
+require 'templates/_upload_document.php';
 require 'templates/_footer.php'; 

@@ -13,9 +13,37 @@
 		}
 	}
 
+	function selectAllDocument($db){
+		try{
+			$sql = "SELECT * FROM recettage";
+			$req = $db->prepare($sql);
+			$req->execute(); 
+			$result = $req->fetchAll(PDO::FETCH_ASSOC);
+			return $result;
+		}
+		catch (PDOException $e){
+			print 'Erreur PDO : '.$e->getMessage().'<br/>';
+			die();
+		}
+	}
+
 	function selectDocument($db, $key){
 		try{
 			$sql = "SELECT id FROM recettage WHERE doc_key = '".$key."'";
+			$req = $db->prepare($sql);
+			$req->execute(); 
+			$result = $req->fetchAll(PDO::FETCH_ASSOC);
+			return $result;
+		}
+		catch (PDOException $e){
+			print 'Erreur PDO : '.$e->getMessage().'<br/>';
+			die();
+		}
+	}
+
+	function selectDocumentById($db, $id){
+		try{
+			$sql = "SELECT id FROM recettage WHERE id = '".$id."'";
 			$req = $db->prepare($sql);
 			$req->execute(); 
 			$result = $req->fetchAll(PDO::FETCH_ASSOC);
@@ -41,23 +69,9 @@
 		}
 	}
 
-	function selectArticles($db){
+	function selectUpload($db, $id){
 		try{
-			$sql = "SELECT * FROM articles ORDER BY created_at DESC";
-			$req = $db->prepare($sql);
-			$req->execute(); 
-			$result = $req->fetchAll(PDO::FETCH_ASSOC);
-			return $result;
-		}
-		catch (PDOException $e){
-			print 'Erreur PDO : '.$e->getMessage().'<br/>';
-			die();
-		}
-	}
-
-	function selectUserArticles($db, $id){
-		try{
-			$sql = "SELECT * FROM articles WHERE user_id = $id ORDER BY created_at DESC";
+			$sql = "SELECT * FROM document WHERE piece_of = $id ORDER BY created_at DESC";
 			$req = $db->prepare($sql);
 			$req->execute(); 
 			$result = $req->fetchAll(PDO::FETCH_ASSOC);
