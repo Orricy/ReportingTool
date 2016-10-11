@@ -55,11 +55,11 @@
 		}
 	}
 
-	function uploadDocument($db, $path, $partOf){
+	function uploadDocument($db, $name, $path, $partOf){
 		try{
-			$sql = "INSERT INTO document SET piece_of = :part_of, path_to = :path_to";
+			$sql = "INSERT INTO document SET name = :name, piece_of = :part_of, path_to = :path_to";
 			$req = $db->prepare($sql);
-			$req->execute(array(':part_of' => $partOf, ':path_to' => $path));
+			$req->execute(array(':name' => $name, ':part_of' => $partOf, ':path_to' => $path));
 			$result = $req->fetchAll(PDO::FETCH_ASSOC);
 			return true;
 		}

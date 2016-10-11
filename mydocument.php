@@ -5,7 +5,6 @@ require 'config/config.php';
 require('model/functions.fn.php');
 
 $documentUploads = selectUpload($db, $_SESSION['document']);
-//var_dump($documentUploads);
 
 require 'templates/_header.php';
 require 'templates/_upload_document.php';
