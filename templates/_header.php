@@ -25,13 +25,13 @@
                     </div>
                 <?php endif; ?>
 				<div class="col-md-3 col-sm-3 col-xs-6 navButton">
-					<a type="button" class="btn btn-default btn-block" href="upload.php">Upload</a>
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-6 navButton">
 					<a type="button" class="btn btn-default btn-block" href="index.php">Home</a>
 				</div>
+                <div class="col-md-3 col-sm-3 col-xs-6 navButton">
+                    <a type="button" class="btn btn-default btn-block" href="upload.php">Upload</a>
+                </div>
 				<div class="col-md-3 col-sm-3 col-xs-6 navButton">
-					<a type="button" class="btn btn-default btn-block">Info</a>
+					<a type="button" class="btn btn-default btn-block" href="quit.php">Déconnexion</a>
 				</div>
 
 				<div class="btn-group col-md-3 col-sm-3 col-xs-6">
