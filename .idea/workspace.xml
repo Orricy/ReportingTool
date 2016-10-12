@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b01af2df-ff2c-4c48-b5cb-da31a615d525" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deletedocument.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mydocument.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/select.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/_upload_document.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/config.php" afterPath="$PROJECT_DIR$/config/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form2.php" afterPath="$PROJECT_DIR$/form2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recettage.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_3.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form3.php" afterPath="$PROJECT_DIR$/form3.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form4.php" afterPath="$PROJECT_DIR$/form4.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form_start.php" afterPath="$PROJECT_DIR$/form_start.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/formone.php" afterPath="$PROJECT_DIR$/formone.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/functions.fn.php" afterPath="$PROJECT_DIR$/model/functions.fn.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/new.php" afterPath="$PROJECT_DIR$/new.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/_header.php" afterPath="$PROJECT_DIR$/templates/_header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main.php" afterPath="$PROJECT_DIR$/templates/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test3.php" afterPath="$PROJECT_DIR$/test3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/upload.php" afterPath="$PROJECT_DIR$/upload.php" />
     </list>
     <ignored path="ReportingTool.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form2.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="form2.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/form2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="390">
+              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -110,8 +97,8 @@
       <file leaf-file-name="_header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/_header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+            <state relative-caret-position="263">
+              <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -137,11 +124,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form_start.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="form_start.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/form_start.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -158,13 +145,13 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/templates/form2.php" />
         <option value="$PROJECT_DIR$/templates/formone.php" />
-        <option value="$PROJECT_DIR$/form_start.php" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/test3.php" />
         <option value="$PROJECT_DIR$/config/config.php" />
         <option value="$PROJECT_DIR$/form2.php" />
         <option value="$PROJECT_DIR$/formone.php" />
         <option value="$PROJECT_DIR$/form3.php" />
+        <option value="$PROJECT_DIR$/form_start.php" />
       </list>
     </option>
   </component>
@@ -344,13 +331,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2860000" />
+    <option name="totallyTimeSpent" value="2920000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26171243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26171243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -695,14 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/form_start.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -733,8 +712,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/_header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        <state relative-caret-position="263">
+          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -765,8 +744,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/form2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="390">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form_start.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
