@@ -1,4 +1,10 @@
-<?php include('templates/_header.php'); ?>
+<?php
+
+session_start();
+
+include('templates/_header.php');
+
+?>
 
 <div class="container"> 
     <div class="row"> 

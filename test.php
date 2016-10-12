@@ -29,6 +29,7 @@ try
         $req->execute(array(
             ':info_client' => $info_client, ':info_personne' => $info_personne, ':objectif' => $objectif, ':cible' => $cible, ':solution' => $solution));
         $result = $req->fetchAll(PDO::FETCH_ASSOC);
+        header('Location: form2.php');
         return true;
     }
 }

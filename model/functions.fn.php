@@ -13,6 +13,20 @@
 		}
 	}
 
+	function selectAllDocument($db){
+		try{
+			$sql = "SELECT * FROM recettage";
+			$req = $db->prepare($sql);
+			$req->execute(); 
+			$result = $req->fetchAll(PDO::FETCH_ASSOC);
+			return $result;
+		}
+		catch (PDOException $e){
+			print 'Erreur PDO : '.$e->getMessage().'<br/>';
+			die();
+		}
+	}
+
 	function selectDocument($db, $key){
 		try{
 			$sql = "SELECT id FROM recettage WHERE doc_key = '".$key."'";
@@ -27,23 +41,9 @@
 		}
 	}
 
-	function uploadDocument($db, $path, $partOf){
+	function selectDocumentById($db, $id){
 		try{
-			$sql = "INSERT INTO document SET piece_of = :part_of, path_to = :path_to";
-			$req = $db->prepare($sql);
-			$req->execute(array(':part_of' => $partOf, ':path_to' => $path));
-			$result = $req->fetchAll(PDO::FETCH_ASSOC);
-			return true;
-		}
-		catch (PDOException $e){
-			print 'Erreur PDO : '.$e->getMessage().'<br/>';
-			die();
-		}
-	}
-
-	function selectArticles($db){
-		try{
-			$sql = "SELECT * FROM articles ORDER BY created_at DESC";
+			$sql = "SELECT id FROM recettage WHERE id = '".$id."'";
 			$req = $db->prepare($sql);
 			$req->execute(); 
 			$result = $req->fetchAll(PDO::FETCH_ASSOC);
@@ -55,9 +55,37 @@
 		}
 	}
 
-	function selectUserArticles($db, $id){
+	function deleteDocumentById($db, $id){
 		try{
-			$sql = "SELECT * FROM articles WHERE user_id = $id ORDER BY created_at DESC";
+			$sql = "DELETE FROM document WHERE id = :id";
+			$req = $db->prepare($sql);
+			$req->execute(array(':id' => $id));
+			$result = $req->fetchAll(PDO::FETCH_ASSOC);
+			return true;
+		}
+		catch (PDOException $e){
+			print 'Erreur PDO : '.$e->getMessage().'<br/>';
+			die();
+		}
+	}
+
+	function uploadDocument($db, $name, $path, $partOf){
+		try{
+			$sql = "INSERT INTO document SET name = :name, piece_of = :part_of, path_to = :path_to";
+			$req = $db->prepare($sql);
+			$req->execute(array(':name' => $name, ':part_of' => $partOf, ':path_to' => $path));
+			$result = $req->fetchAll(PDO::FETCH_ASSOC);
+			return true;
+		}
+		catch (PDOException $e){
+			print 'Erreur PDO : '.$e->getMessage().'<br/>';
+			die();
+		}
+	}
+
+	function selectUpload($db, $id){
+		try{
+			$sql = "SELECT * FROM document WHERE piece_of = $id ORDER BY created_at DESC";
 			$req = $db->prepare($sql);
 			$req->execute(); 
 			$result = $req->fetchAll(PDO::FETCH_ASSOC);

@@ -13,7 +13,7 @@ include('templates/_header.php');
                 <label for="pseudo">Avez-vous un cahier des charges?</label><br>
 
                 <a class="btn btn-default" href="form2.php">Oui</a>
-                <a class="btn btn-default" href="form1.php">Non, je le fais en ligne</a>
+                <a class="btn btn-default" href="formone.php">Non, je le fais en ligne</a>
 
         </form>
         </div>

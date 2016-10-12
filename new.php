@@ -5,8 +5,13 @@ require 'config/config.php';
 require('model/functions.fn.php');
 
 if(isset($_SESSION['document'])){
-    //session_destroy();
-    //header('Location: new.php');
+    $doc = selectDocumentById($db, $_SESSION['document']);
+    if(empty($doc)){
+        session_destroy();
+        header('Location: index.php');
+    }
+    else
+        header('Location: upload.php');
 }
 else{
     $documentKey = uniqid(true);

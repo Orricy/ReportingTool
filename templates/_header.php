@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body onresize="getSize()">
+<body>
 	<noscript>
 		<div class="container-fluid">
 			<div class="row">
@@ -28,6 +28,11 @@
 				<div class="col-md-3 col-sm-3 col-xs-6 navButton">
 					<a type="button" class="btn btn-default btn-block">Info</a>
 				</div>
+                <?php if(isset($_SESSION['document'])): ?>
+                    <div class="col-md-3 col-sm-3 col-xs-6 navButton">
+                        <a type="button" href="mydocument.php" class="btn btn-default btn-block">Numéro de dossier : <?php echo $_SESSION['document']; ?></a>
+                    </div>
+                <?php endif; ?>
 				<!--Modal connection in template footer-->
 			</div>
 		</div>
