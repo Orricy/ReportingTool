@@ -7,5 +7,4 @@
             <a class="btn btn-large btn-block btn-danger" href="new.php">Nouveau</a>
         </div>
     </div>
-    
 </div>

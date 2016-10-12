@@ -28,6 +28,16 @@
 				<div class="col-md-3 col-sm-3 col-xs-6 navButton">
 					<a type="button" class="btn btn-default btn-block">Info</a>
 				</div>
+
+				<div class="btn-group">
+					<button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Formulaires <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li></li>
+					</ul>
+				</div>
+
 				<!--Modal connection in template footer-->
 			</div>
 		</div>
