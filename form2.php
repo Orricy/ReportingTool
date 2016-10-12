@@ -12,7 +12,7 @@ include('templates/_header.php');
 
     <h1>Présentation du projet</h1>
 
-        <form method="post" action="test3.php"> 
+        <form method="post" action="test3.php">
 
             <label for="pitch">Pitch du projet :</label><br>
             <input type="text" name="pitch" id="pitch" class="form-control" placeholder="Écrivez le pitch du projet"><br>

@@ -97,6 +97,48 @@
 		}
 	}
 
+	function selectInformation($db, $id){
+		try{
+			$sql = "SELECT * FROM informations WHERE piece_of = $id LIMIT 1";
+			$req = $db->prepare($sql);
+			$req->execute(); 
+			$result = $req->fetchAll(PDO::FETCH_ASSOC);
+			return $result;
+		}
+		catch (PDOException $e){
+			print 'Erreur PDO : '.$e->getMessage().'<br/>';
+			die();
+		}
+	}
+
+	function selectProjectInfos($db, $id){
+		try{
+			$sql = "SELECT * FROM form2 WHERE piece_of = $id LIMIT 1";
+			$req = $db->prepare($sql);
+			$req->execute(); 
+			$result = $req->fetchAll(PDO::FETCH_ASSOC);
+			return $result;
+		}
+		catch (PDOException $e){
+			print 'Erreur PDO : '.$e->getMessage().'<br/>';
+			die();
+		}
+	}
+
+	function selectProjectCom($db, $id){
+		try{
+			$sql = "SELECT * FROM communication WHERE piece_of = $id LIMIT 1";
+			$req = $db->prepare($sql);
+			$req->execute(); 
+			$result = $req->fetchAll(PDO::FETCH_ASSOC);
+			return $result;
+		}
+		catch (PDOException $e){
+			print 'Erreur PDO : '.$e->getMessage().'<br/>';
+			die();
+		}
+	}
+
 		/*1.4!selectTweet
 			return : 
 				selected tweet in array
