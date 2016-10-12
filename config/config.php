@@ -3,7 +3,7 @@
 $host = 'localhost';
 $dbname = 'iim_reporting';
 $user = 'root';
-$pass = 'root';
+$pass = '';
 
 try{
     $db = new PDO('mysql:host='.$host.';dbname='.$dbname, $user, $pass, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));

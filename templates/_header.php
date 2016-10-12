@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body onresize="getSize()">
+<body>
 	<noscript>
 		<div class="container-fluid">
 			<div class="row">
@@ -30,14 +30,22 @@
 				</div>
 
 				<div class="btn-group">
-					<button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						Formulaires <span class="caret"></span>
 					</button>
 					<ul class="dropdown-menu">
-						<li></li>
+						<li><a href="formone.php">Informations clients</a></li>
+						<li><a href="form2.php">Présentation du projet</a></li>
+						<li><a href="form3.php">Méthode de travail</a></li>
+						<li><a href="form4.php">Fichiers</a></li>
 					</ul>
 				</div>
 
+                <?php if(isset($_SESSION['document'])): ?>
+                    <div class="col-md-3 col-sm-3 col-xs-6 navButton">
+                        <a type="button" href="mydocument.php" class="btn btn-default btn-block">Numéro de dossier : <?php echo $_SESSION['document']; ?></a>
+                    </div>
+                <?php endif; ?>
 				<!--Modal connection in template footer-->
 			</div>
 		</div>
