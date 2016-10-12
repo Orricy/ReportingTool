@@ -19,6 +19,11 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class ="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1" id="header">
+                <?php if(isset($_SESSION['document'])): ?>
+                    <div class="col-xs-12 navButton">
+                        <a type="button" href="mydocument.php" class="btn btn-default btn-block">Numéro de dossier : <?php echo $_SESSION['document']; ?></a>
+                    </div>
+                <?php endif; ?>
 				<div class="col-md-3 col-sm-3 col-xs-6 navButton">
 					<a type="button" class="btn btn-default btn-block" href="upload.php">Upload</a>
 				</div>
@@ -29,24 +34,17 @@
 					<a type="button" class="btn btn-default btn-block">Info</a>
 				</div>
 
-				<div class="btn-group">
-					<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<div class="btn-group col-md-3 col-sm-3 col-xs-6">
+					<button class="btn btn-default btn-block dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						Formulaires <span class="caret"></span>
 					</button>
-					<ul class="dropdown-menu">
+					<ul class="dropdown-menu col-sm-12">
 						<li><a href="formone.php">Informations clients</a></li>
 						<li><a href="form2.php">Présentation du projet</a></li>
 						<li><a href="form3.php">Méthode de travail</a></li>
 						<li><a href="form4.php">Fichiers</a></li>
 					</ul>
 				</div>
-
-                <?php if(isset($_SESSION['document'])): ?>
-                    <div class="col-md-3 col-sm-3 col-xs-6 navButton">
-                        <a type="button" href="mydocument.php" class="btn btn-default btn-block">Numéro de dossier : <?php echo $_SESSION['document']; ?></a>
-                    </div>
-                <?php endif; ?>
-				<!--Modal connection in template footer-->
 			</div>
 		</div>
 	</div>
