@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include('templates/_header.php');
 
 ?>
@@ -8,7 +8,7 @@ include('templates/_header.php');
     <div class="col-md-8 col-md-offset-2">
         <h1>Possédez-vous :</h1>
 
-        <form method="post" action="test_3.php"> 
+        <form method="post"> 
 
             <label for="benchmark">Benchmark ?</label><br>
             <input type="radio" name="benchmark" value="Oui"> Oui

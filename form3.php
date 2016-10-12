@@ -1,14 +1,13 @@
 <?php
-
+session_start();
 include('templates/_header.php');
-
 ?>
 
     <div class="container-fluid accueil">
         <div class="col-md-8 col-md-offset-2">
             <h1>Méthodes de travail</h1>
 
-            <form method="post" action="test_3.php"> 
+            <form method="post" action="test_3.php">
 
                 <label for="fb">Facebook</label><br>
                 <input type="radio" name="fb" value="Oui"> Oui

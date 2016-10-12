@@ -1,4 +1,7 @@
 <?php
+session_start();
+require 'config/config.php';
+
 $fb = $_POST['fb'];
 $lien_fb = $_POST['lien_fb'];
 $mdp_fb = $_POST['mdp_fb'];
@@ -16,6 +19,7 @@ $autre_nom3 = $_POST['autre_nom3'];
 $autre_lien3 = $_POST['autre_lien3'];
 $required = array('fb', 'lien_fb', 'mdp_fb', 'drive', 'lien_drive', 'mdp_drive', 'git',
     'lien_git', 'mdp_git', 'autre_nom1', 'autre_lien1', 'autre_nom2', 'autre_lien2', 'autre_nom3', 'autre_lien3');
+$partOf = $_SESSION['document'];
 $error = false;
 
 
@@ -31,8 +35,7 @@ try
     if ($error) {
         echo "All fields are required.";
     } else {
-        $bdd = new PDO('mysql:host=localhost;dbname=iim_reporting', 'root', 'root');
-        $req = $bdd->prepare('INSERT INTO communication SET fb = :fb,
+        $req = $db->prepare('INSERT INTO communication SET fb = :fb,
                                                             lien_fb = :lien_fb,
                                                             mdp_fb = :mdp_fb,
                                                             drive = :drive,
@@ -46,13 +49,14 @@ try
                                                             autre_nom2 = :autre_nom2,
                                                             autre_lien2 = :autre_lien2,
                                                             autre_nom3 = :autre_nom3,
-                                                            autre_lien3 = :autre_lien3
+                                                            autre_lien3 = :autre_lien3,
+                                                            piece_of = :piece_of
                                                             ');
         $req->execute(array(
             ':fb' => $fb, ':lien_fb' => $lien_fb, ':mdp_fb' => $mdp_fb, ':drive' => $drive, ':lien_drive' => $lien_drive,
             ':mdp_drive' => $mdp_drive, ':git' => $git, ':lien_git' => $lien_git, ':mdp_git' => $mdp_git,
             ':autre_nom1' => $autre_nom1, 'autre_lien1' => $autre_lien1, ':autre_nom2' => $autre_nom2, 'autre_lien2' => $autre_lien2,
-            ':autre_nom3' => $autre_nom3, 'autre_lien3' => $autre_lien3));
+            ':autre_nom3' => $autre_nom3, 'autre_lien3' => $autre_lien3, 'piece_of' => $partOf));
         $result = $req->fetchAll(PDO::FETCH_ASSOC);
         header('Location: form4.php');
         return true;

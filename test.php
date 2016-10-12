@@ -1,6 +1,5 @@
 <?php
 session_start();
-//Main content and login
 require 'config/config.php';
 
 $info_client = $_POST['info_client'];
