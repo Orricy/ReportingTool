@@ -54,8 +54,8 @@
             echo '<h3>Ville du décisionnaire</h3>';
             echo '<p>'.$project['deci_city'].' - '.$project['deci_postal'].'</p>';
             
-            echo '<h3>Début du projet : '.$project['debproj'].'</h3>';
-            echo '<h3>Fin du projet : '.$project['finproj'].'</h3>';
+            echo '<h3>Début du projet : '.date_format(date_create($project['debproj']), 'd-m-Y').'</h3>';
+            echo '<h3>Fin du projet : '.date_format(date_create($project['finproj']), 'd-m-Y').'</h3>';
             echo '</section>';
         }
         ?>
