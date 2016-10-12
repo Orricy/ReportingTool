@@ -1,6 +1,7 @@
 <?php
 session_start();
-require('model/functions.fn.php');
+require 'config/config.php';
+
 $pitch = $_POST['pitch'];
 $brief = $_POST['brief'];
 $client_surname = $_POST['client_surname'];
@@ -17,8 +18,8 @@ $deci_mail = $_POST['deci_mail'];
 $deci_city = $_POST['deci_city'];
 $deci_postal = $_POST['deci_postal'];
 $deci_adress = $_POST['deci_adress'];
-$debproj = $_POST['debprof'];
-$finproj = $_POST['finprof'];
+$debproj = $_POST['debproj'];
+$finproj = $_POST['finproj'];
 $required = array('pitch', 'brief', 'client_surname', 'client_lastname', 'client_phone', 'client_mail', 'client_city', 'client_postal', 'client_adress', 'deci_surname', 'deci_lastname', 'deci_phone', 'deci_mail', 'deci_city', 'deci_postal', 'deci_adress', 'debproj', 'finproj');
 $partOf = $_SESSION['document'];
 $error = false;
