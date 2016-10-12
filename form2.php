@@ -39,10 +39,10 @@ include('templates/_header.php');
             <input type="text" name="deci_adress" id="deci_adress" class="form-control" placeholder="Adresse du décisionnaire"><br>
 
             <label for="debproj">Date de début du projet :</label><br>
-            <input type="text" name="debproj" id="debproj" class="form-control" placeholder="Date de début"><br>
+            <input type="date" name="debproj" id="debproj" class="form-control" placeholder="Date de début"><br>
 
             <label for="finproj">Date de fin du projet :</label><br>
-            <input type="text" name="finproj" id="finproj" class="form-control" placeholder="Date de fin"><br><br>
+            <input type="date" name="finproj" id="finproj" class="form-control" placeholder="Date de fin"><br><br>
 
             <!-- UPLOAD GANTT -->
 
