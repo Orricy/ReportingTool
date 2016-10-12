@@ -58,7 +58,7 @@ try
             ':autre_nom1' => $autre_nom1, 'autre_lien1' => $autre_lien1, ':autre_nom2' => $autre_nom2, 'autre_lien2' => $autre_lien2,
             ':autre_nom3' => $autre_nom3, 'autre_lien3' => $autre_lien3, 'piece_of' => $partOf));
         $result = $req->fetchAll(PDO::FETCH_ASSOC);
-        header('Location: form4.php');
+        header('Location: mydocument.php');
         return true;
     }
 }
