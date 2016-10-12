@@ -21,5 +21,11 @@ if(isset($_SESSION['document'])){
     }
 }
 else{
-    header('Location: index.php');
+    $documentKey = uniqid(true);
+    createDocument($db, $documentKey);
+    $docId = selectDocument($db, $documentKey);
+    if($docId){
+        $_SESSION['document'] = intval($docId[0]['id']);
+        header('Location: upload.php');
+    }
 }
