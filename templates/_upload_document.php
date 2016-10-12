@@ -111,4 +111,7 @@
             ?>
         </section>
     </div>
+    <div class="row">
+        <a type="button" href="sendmail.php" class="btn btn-warning btn-block">Notifier le client</a>
+    </div>
 </div>
