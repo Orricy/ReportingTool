@@ -54,12 +54,12 @@ try
                                                     deci_postal = :deci_postal,
                                                     deci_adress = :deci_adress,
                                                     debproj = :debproj,
-                                                    finproj = :finproj
+                                                    finproj = :finproj,
                                                     piece_of = :piece_of');
-        $req->execute(array(
-            ':pitch' => $pitch, ':brief' => $brief, ':client_surname' => $client_surname, ':client_lastname' => $client_lastname, ':client_phone' => $client_phone, ':client_mail' => $client_mail, ':client_city' => $client_city, ':client_postal' => $client_postal, ':client_adress' => $client_adress, ':deci_surname' => $deci_surname, ':deci_lastname' => $deci_lastname, ':deci_phone' => $deci_phone, ':deci_mail' => $deci_mail, ':deci_city' => $deci_city, ':deci_postal' => $deci_postal, ':deci_adress' => $deci_adress, ':debproj' => $debproj, ':finproj' => $finproj, ':piece_of' => $partOf));
+        $req->execute(array(':pitch' => $pitch, ':brief' => $brief, ':client_surname' => $client_surname, ':client_lastname' => $client_lastname, ':client_phone' => $client_phone, ':client_mail' => $client_mail, ':client_city' => $client_city, ':client_postal' => $client_postal, ':client_adress' => $client_adress, ':deci_surname' => $deci_surname, ':deci_lastname' => $deci_lastname, ':deci_phone' => $deci_phone, ':deci_mail' => $deci_mail, ':deci_city' => $deci_city, ':deci_postal' => $deci_postal, ':deci_adress' => $deci_adress, ':debproj' => $debproj, ':finproj' => $finproj, ':piece_of' => $partOf));
         $result = $req->fetchAll(PDO::FETCH_ASSOC);
         header('Location: form3.php');
+        return;
     }
 }
 catch (PDOException $e){
