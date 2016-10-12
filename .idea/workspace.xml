@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b01af2df-ff2c-4c48-b5cb-da31a615d525" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/recettage.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form3.php" afterPath="$PROJECT_DIR$/form3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form4.php" afterPath="$PROJECT_DIR$/form4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form_start.php" afterPath="$PROJECT_DIR$/form_start.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/_header.php" afterPath="$PROJECT_DIR$/templates/_header.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sql/form2.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sql/form3.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sql/form_start.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sql/table_formone.sql" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form_start.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydocument.php" afterPath="$PROJECT_DIR$/mydocument.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/new.php" afterPath="$PROJECT_DIR$/new.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/upload_form.php" afterPath="$PROJECT_DIR$/templates/upload_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
     </list>
     <ignored path="ReportingTool.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,16 +33,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/main.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -53,8 +46,8 @@
       <file leaf-file-name="form2.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/form2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+            <state relative-caret-position="449">
+              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -63,10 +56,22 @@
       <file leaf-file-name="test3.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test3.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
+            <state relative-caret-position="284">
+              <caret line="54" column="2" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
               <folding>
                 <marker date="1476275730000" expanded="true" signature="1345:2733" ph="INSERT INTO form2... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_3.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_3.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+              <folding>
+                <marker date="1476276950000" expanded="true" signature="1085:2283" ph="INSERT INTO communication... " />
               </folding>
             </state>
           </provider>
@@ -82,13 +87,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+            <state relative-caret-position="464">
+              <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
               <folding>
-                <marker date="1476275698000" expanded="true" signature="656:1023" ph="INSERT INTO informations... " />
+                <marker date="1476277154000" expanded="true" signature="675:1119" ph="INSERT INTO informations... " />
               </folding>
             </state>
           </provider>
@@ -124,16 +129,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form_start.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/form_start.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -145,13 +140,13 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/templates/form2.php" />
         <option value="$PROJECT_DIR$/templates/formone.php" />
-        <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/test3.php" />
         <option value="$PROJECT_DIR$/config/config.php" />
         <option value="$PROJECT_DIR$/form2.php" />
         <option value="$PROJECT_DIR$/formone.php" />
         <option value="$PROJECT_DIR$/form3.php" />
         <option value="$PROJECT_DIR$/form_start.php" />
+        <option value="$PROJECT_DIR$/test.php" />
       </list>
     </option>
   </component>
@@ -331,13 +326,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2920000" />
+    <option name="totallyTimeSpent" value="3095000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26171243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26171243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -364,14 +359,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/_header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/functions.fn.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -547,7 +534,7 @@
         <state relative-caret-position="479">
           <caret line="40" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
-            <marker date="1476275698000" expanded="true" signature="656:1023" ph="INSERT INTO informations... " />
+            <marker date="1476277154000" expanded="true" signature="675:1119" ph="INSERT INTO informations... " />
           </folding>
         </state>
       </provider>
@@ -682,26 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-          <folding>
-            <marker date="1476275698000" expanded="true" signature="656:1023" ph="INSERT INTO informations... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
-          <folding>
-            <marker date="1476275730000" expanded="true" signature="1345:2733" ph="INSERT INTO form2... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -726,14 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/formone.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/form3.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -742,19 +701,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/form2.php">
+    <entry file="file://$PROJECT_DIR$/form_start.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        <state relative-caret-position="360">
+          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/form_start.php">
+    <entry file="file://$PROJECT_DIR$/test_3.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="195">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding>
+            <marker date="1476276950000" expanded="true" signature="1085:2283" ph="INSERT INTO communication... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="54" column="2" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
+          <folding>
+            <marker date="1476275730000" expanded="true" signature="1345:2733" ph="INSERT INTO form2... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/formone.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+          <folding>
+            <marker date="1476277154000" expanded="true" signature="675:1119" ph="INSERT INTO informations... " />
+          </folding>
         </state>
       </provider>
     </entry>

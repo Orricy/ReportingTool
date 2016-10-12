@@ -10,22 +10,16 @@ if(isset($_SESSION['document'])){
         session_destroy();
         header('Location: index.php');
     }
-    else
-        header('Location: upload.php');
-}
-else{
-    $documentKey = uniqid(true);
-    createDocument($db, $documentKey);
-    $docId = selectDocument($db, $documentKey);
-    if($docId){
-        $_SESSION['document'] = intval($docId[0]['id']);
+    else{
+        $documentKey = uniqid(true);
+        createDocument($db, $documentKey);
+        $docId = selectDocument($db, $documentKey);
+        if($docId){
+            $_SESSION['document'] = intval($docId[0]['id']);
+            header('Location: upload.php');
+        }
     }
 }
-    
-
-
-//$_SESSION['document'] = 0;
-
-require 'templates/_header.php';
-require 'templates/new.php';
-require 'templates/_footer.php'; 
+else{
+    header('Location: index.php');
+}
