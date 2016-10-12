@@ -42,7 +42,6 @@
 						<li><a href="formone.php">Informations clients</a></li>
 						<li><a href="form2.php">Présentation du projet</a></li>
 						<li><a href="form3.php">Méthode de travail</a></li>
-						<li><a href="form4.php">Fichiers</a></li>
 					</ul>
 				</div>
 			</div>

@@ -38,8 +38,6 @@ include('templates/_header.php');
 
                 <button type="submit" class="btn btn-default">Valider</button>
             </form>
-
-            CYCLES
         </div>
     </div>
 
